@@ -1,0 +1,79 @@
+body {
+	width:100%;
+	/*text-align:center;*/
+	background-color:#000000;
+	color: #333;
+}
+
+header {
+	
+}
+
+h2 {
+	text-align:center;
+}
+
+#containerDiv {
+	max-width:1000px;
+	margin:25px auto;
+	background:#ebe8de;
+	border-radius:25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 10px;
+}
+
+#resetDiv {
+	text-align:center;
+	margin:0px auto;
+	width:100%;
+}
+
+#playAgain {
+	display:none;
+	margin-right:10px;
+	font-weight:bold;
+}
+
+#cardsDiv {
+  float:left;
+  text-align:center;
+  width:100%;
+  height:100%;
+  margin-top:25px;
+}
+
+button.card {
+  width:20%;
+  background-color:#000088;
+  margin:5px;
+  display:inline-block;
+  height:100px;
+  border-radius:10px;
+  padding:0px 0px;
+  border: 0px;
+  /*background-image: url("../img/heart.png");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color:#ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:4.75em;
+}
+
+button.s {
+  background-image: url("../img/spade.png");
+}
+button.h {
+	 background-image: url("../img/heart.png");
+}
+button.d {
+	 background-image: url("../img/diamond.png");
+}
+button.c {
+	 background-image: url("../img/club.png");
+}
+
+#newBest {
+	display:none;
+}

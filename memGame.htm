@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game!</title>
+
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+			    $(".returnBtn").bind("click", function() {
+					window.location = "../../portfolio";
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="containerDiv">
+			<header>
+				<div id="Welcome">
+					<h2>Welcome to the memory game!</h2>
+					<p>Ten cards have been drawn from a virtual playing card deck and paired. For each correct match in a row, your points per match increases. An incorrect match drops your points per match back to 1.</p>
+				</div>
+				<div id="scoreBoard">
+					<p>Current Score: <span id="currentScore">0</span></p>
+					<p>Current Points Per Match: <span id="pointsPerMatch">1</span><p>
+					<div id="newBest"></div>
+					<p>Best Score: <span id="bestScore">0</span></p>
+				</div>
+				<div id="resetDiv">
+					<span id="playAgain">Good job! Play again?</span>
+					<span><button id="resetBtn" onClick="init();">Start Over</button></span>
+					<span><input type="button" value="Return to Portfolio" class="returnBtn"></span>
+				</div>
+					
+			</header>
+			<div id="cardsDiv">
+				<button type="button" class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+	
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+				<button type="button"  class="card" onClick="doSelectCard(this);" >&nbsp;</button>
+			</div>
+		</div>
+
+	<script src="js/script.js"></script>
+	</body>
+</html>
